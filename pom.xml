@@ -103,6 +103,7 @@
           </dependency>
         </dependencies>
         <build>
+          <finalName>ROOT</finalName>
           <plugins>
             <plugin>
               <groupId>org.apache.maven.plugins</groupId>
@@ -161,7 +162,7 @@
                       <argument>--autoBindHttp</argument>
                       <argument>--logo</argument>
                       <argument>--deploy</argument>
-                      <argument>${basedir}/target/${project.artifactId}.war</argument>
+                      <argument>${basedir}/target/${project.build.finalName}.war</argument>
                       <argument>--outputUberJar</argument>
                       <argument>${basedir}/target/${project.artifactId}-payara.jar</argument>
                     </arguments>
